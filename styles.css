@@ -1,0 +1,44 @@
+#app-container {
+    width: screen;
+    height: screen;
+}
+
+#container {
+    justify-content: center;
+    border-color: black;
+
+}
+
+#items {
+    margin: 1rem auto;
+}
+
+fieldset {
+    margin: 2em 40%;
+    padding: 1em 2em;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+}
+
+#title {
+    margin: 0 40%;
+    padding-top: 2rem;
+}
+
+#error {
+    color: red;
+}
+
+input {
+    border-radius: 5px;
+    
+}
+
+input:invalid {
+    border-color: red;
+
+}
+
+#submit {
+    margin: 0 40%;
+}

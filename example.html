@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Example Doc</title>
+    <script defer src="example.js"></script>
+</head>
+<body>
+    <div id="app-container">
+        <div id="error"></div>
+            <div id="container">
+            <h1 id="title">Practice App</h1>
+            <form action="/" method="GET" id="form">
+            <fieldset>
+            <div id="items">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" autocomplete="off" placeholder="Enter First Name" ><br><br>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" autocomplete="off" placeholder="Enter Last Name" ><br><br>
+                <label for="firstName">Email:</label>
+                <input type="email" id="email" autocomplete="off" placeholder="Enter Email" ><br><br>
+                <label for="firstName">Phone:</label>
+                <input 
+                type="telNo" 
+                id="phone" 
+                autocomplete="off" 
+                placeholder="Enter Phone Number" 
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" 
+                />
+                <!-- <input type="radio" id="cell"></input>
+                <label for="cell">Cell Phone</label>
+                <input type="radio" id="home"></input>
+                <label for="home">Home Phone</label> -->
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" autocomplete="off" placeholder="Enter Password" ><br><br>
+            </div>
+            </fieldset>
+        <button type="submit" id="submit">Submit</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>
